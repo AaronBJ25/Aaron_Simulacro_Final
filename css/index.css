@@ -51,11 +51,8 @@ a {
 
 /* COMPONENTES */
 
-.section {
-    max-width: var(--max-w-section);
-}
-
 .container {
+    max-width: var(--max-w-section);
     padding: var(--s-xl) var(--s-xl) var(--s-sm)
 }
 
@@ -93,13 +90,72 @@ a {
 
 header {
     background-color: var(--c-bg-cream);
-    padding: var(--s-md);
+    padding: var(--s-lg);
     position: sticky;
+
+    &.flex-row {
+        justify-content: center;
+    }
+
+    & .header__link {
+
+        transition: color .3s;
+
+            &:hover {
+                color: var(--c-link-orange);
+            }
+    }
 
     & nav {
         
-        position: absolute;
-        top: 100%;
-        right: 20px;
+
+
+        & #menu__btn {
+            position: absolute;
+            top: 120%;
+            right: 20px;
+            background: transparent;
+            border: none;
+            color: var(--c-light);
+            transition: color .3s;
+
+            &:hover {
+                color: var(--c-link-orange);
+            }
+        }
     }
 }
+
+/* HERO */
+
+.hero__section {
+
+    & .hero__background {
+
+        background-image: url(../media/hero_bg.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        min-height: 91.2vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        & .hero__block {
+            
+            padding: var(--s-md);
+
+            & img {
+                max-width: 1390px;
+            }
+
+        }
+    }
+}
+
+
+
+
