@@ -24,7 +24,7 @@ img {
 
     /* Max-width */
 
-    --max-w-section: 71.875rem;
+    --max-w-section: 100rem;
 
     /* Espacios */
 
@@ -38,20 +38,32 @@ img {
 
     --f-heading-xl: 700 6.25rem "DM Serif Display", serif;
     --f-heading-md: 700 2.1875rem "DM Serif Display", serif;
-    --f-body: 400 1.375rem "DM Serif Display", serif;
-    --f-link: 700 .875rem "Inter", sans-serif; 
+    --f-body: 300 1.375rem "Inter", sans-serif;
+    --f-link: 400 .875rem "Inter", sans-serif; 
+
+    /* Bordes */
+
+    --r-xl: 2rem;
+    --r-md: 1rem;
+    --r-sm: 5px;
 }
 
 /* ENLACES */
 
 a {
     color: var(--c-dark);
-    font-weight: bolder;
+    text-decoration: none;
+
 }
 
 /* COMPONENTES */
 
+.section {
+    margin: var(--s-xl) 0;
+}
+
 .container {
+    margin: auto;
     max-width: var(--max-w-section);
     padding: var(--s-xl) var(--s-xl) var(--s-sm)
 }
@@ -86,6 +98,27 @@ a {
     font: var(--f-link)
 }
 
+.btn {
+    padding: var(--s-sm) var(--s-lg);
+    border-radius: var(--r-xl);
+}
+
+.btn--light {
+    color: var(--c-dark);
+    background-color: var(--c-light);
+}
+
+.btn--dark {
+    color: var(--c-light);
+    background-color: var(--c-dark);
+    transition: background-color .3s;
+
+        &:hover {
+            background-color: var(--c-link-orange);
+        }
+
+}
+
 /* HEADER */
 
 header {
@@ -100,6 +133,7 @@ header {
     & .header__link {
 
         transition: color .3s;
+        text-decoration: underline;
 
             &:hover {
                 color: var(--c-link-orange);
@@ -130,15 +164,19 @@ header {
 
 .hero__section {
 
+    &.section {
+        margin: 0;
+    }
+
     & .hero__background {
 
         background-image: url(../media/hero_bg.webp);
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
 
-        min-height: 91.2vh;
+        min-height: 92vh;
 
         display: flex;
         justify-content: center;
@@ -146,7 +184,7 @@ header {
 
         & .hero__block {
             
-            padding: var(--s-md);
+            padding: var(--s-lg);
 
             & img {
                 max-width: 1390px;
@@ -155,6 +193,123 @@ header {
         }
     }
 }
+
+/* ABOUT US */
+
+.about_us__section {
+
+    & .about_us__block {
+
+        padding: 0 15rem;
+
+        & .about_us__img1 {
+
+            align-self: flex-end;
+            padding-right: var(--s-xl);
+        }
+
+        & .about_us__text-block {
+
+            &.flex-column{
+                padding: 2rem;
+                gap: 2rem;
+            }
+            
+            & p {
+                line-height: 2rem;
+                text-align: center;
+
+                & span a {
+                    color: var(--c-link-orange);
+                }
+            }
+            
+        }
+
+        & .about_us__img2 {
+
+            align-self: flex-start;
+            
+        }
+    }
+}
+
+/* AWAKENED WONDERS */
+
+.awk_wonders_section {
+
+    &.section {
+        margin: 0;
+    }
+
+    background-color: var(--c-bg-pink);
+
+    & .awk_wonders__block {
+        
+        min-height: 60vh;
+        text-align: center;
+
+        &.flex-column {
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
+
+/* RUMBLE */
+
+.rumble_section {
+
+    &.section {
+        margin: 0;
+    }
+
+    background-color: var(--c-bg-cream);
+
+    & .rumble__block {
+
+        & .rumble__block--heading {
+            margin-top: 12.5rem;
+        }
+
+        & .rumble__block--dates {
+            margin-top: 6.25rem;
+            padding-bottom: var(--s-lg);
+        }
+
+    }
+}
+
+/* CONTACT */
+
+.contact__section {
+
+    & .contact__block {
+
+
+        & .contact__form {
+
+            &.flex-column {
+                gap: var(--s-lg);
+            }
+
+            & .link{
+                margin-top: var(--s-lg);
+            }
+
+            & img {
+                max-width: 150px;
+            }
+
+        }
+    }    
+}
+
+
+
+
+
 
 
 

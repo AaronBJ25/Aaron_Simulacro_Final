@@ -1,37 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="js/index.js"></script>
     <title>Simulacro Proyecto Final</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
     <header class="flex-row">
-        <a class="header__link link" href="#">Join my mailing list</a>
-        <nav class="header__nav">
-            <button id="menu__btn" class="body">Menu</button>
-        </nav>
+      <a class="header__link link" href="#">Join my mailing list</a>
+      <nav class="header__nav">
+        <button id="menu__btn" class="body">Menu</button>
+      </nav>
     </header>
     <!-- /Header -->
 
     <!-- Main -->
     <main>
-        <!-- Hero -->
-        <section class="hero__section">
-            <div class="hero__background">
-                <div class="hero__block">
-                    <img class="logo-home" src="media/logo-home.webp" alt="logo-home">
+      <!-- Hero -->
+      <section class="hero__section section">
+        <div class="hero__background">
+          <div class="hero__block">
+            <img class="logo-home" src="media/logo-home.webp" alt="logo-home" />
+          </div>
+        </div>
+      </section>
+      <!-- /Hero -->
+      <!-- About Us -->
+      <section class="about_us__section section">
+        <div class="about_us__block container flex-column">
+          <div class="about_us__img1">
+            <img src="media/static_crow_1.webp" alt="static_crow_1" />
+          </div>
+          <div class="about_us__text-block flex-column">
+            <p class="body">
+              This is my website. I am a comedian. I am interested in change. I
+              am interested in awakening - I feel we can do this together
+              because I have changed so much in my own little life. I am still a
+              comedian and I now do LIVE shows weekdays over on
+              <span><a href="#">Rumble</a></span
+              >(join it's free). Join my mailing list to keep updated with
+              everything coming up. Interested in more? Subscribe to 'Awakened
+              Wonders' the community over on
+              <span><a href="#">LOCALS</a></span> is where I share all the
+              extras from me, behind-the-scenes, LIVE Q&A's and generally more.
+            </p>
+            <a href="#" class="link btn btn--dark"
+              >Sign up to my mailing list</a
+            >
+          </div>
+          <div class="about_us__img2">
+            <img src="media/static_crow_2.webp" alt="static_crow_2" />
+          </div>
+        </div>
+      </section>
+      <!-- /About Us -->
+      <!-- Awakened Wonders -->
+      <section class="awk_wonders_section section">
+        <div class="awk_wonders__block container flex-column">
+          <h2 class="text--xl">Awakened wonders</h2>
+          <a href="#" class="link btn btn--dark">Subscribe</a>
+        </div>
+      </section>
+      <!-- /Awakened Wonders -->
+      <!-- Rumble -->
+       <section class="rumble_section section">
+        <div class="rumble__block container flex-column">
+            <div class="rumble__block--heading flex-column">
+                <h2 class="text--xl">Stay Free With Russell Brand</h2>
+                <a href="#" class="link btn btn--dark">Watch now</a>
+            </div>
+            <div class="rumble__block--dates flex-column">
+                <span class="text--md">LIVE Weekdays on Rumble</span>
+                <span class="text--md">12:00pm EST / 11:00am CST / 5:00pm GMT</span>
+            </div>
+        </div>
+      </section>
+      <!-- /Rumble -->
+      <!-- Contact-->
+       <section class="contact__section section">
+            <div class="contact__block container flex-column">
+                <div class="contact__form flex-column">
+                    <h2 class="text--xl">Join the Mailing List</h2>
+                    <p>Sign up here to receive vital weekly messages directly from me and to get your place on the ark if we can't sort this sh*t out.</p>
+                    <form class="flex-column" action="#" method="get">
+                        <label class="body" for="name">First name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label class="body" for="country">Country</label>
+                        <input type="text" id="country" name="country" required>
+                        <label class="body" for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <input class="link btn btn--dark" type="submit" value="Sign up to my mailing list">
+                    </form>
+                    <img src="media/animated_crow.webp" alt="animated-crow">
                 </div>
             </div>
-        </section>
-        <!-- /Hero -->
+       </section>
+      <!-- /Contact-->
     </main>
     <!-- /Main -->
 
@@ -40,5 +113,5 @@
 
     </footer>
     <!-- /Footer -->
-</body>
+  </body>
 </html>
