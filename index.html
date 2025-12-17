@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css"
+    />
     <script defer src="js/index.js"></script>
     <title>Simulacro Proyecto Final</title>
   </head>
@@ -19,6 +23,19 @@
       <a class="header__link link" href="#">Join my mailing list</a>
       <nav class="header__nav">
         <button id="menu__btn" class="body">Menu</button>
+        <div id="menu" class="flex-column">
+          <button id="close__btn"><i class="ri-close-large-line"></i></button>
+          <ul>
+            <li class="text--md"><a href="#">Home</a></li>
+            <li class="text--md"><a href="#">Rumble Live Show</a></li>
+            <li class="text--md"><a href="#">Awakened Wonders</a></li>
+            <li class="text--md"><a href="#">Podcasts</a></li>
+            <li class="text--md"><a href="#">Blog</a></li>
+            <li class="text--md"><a href="#">Live Dates</a></li>
+            <li class="text--md"><a href="#">Mailing Lists</a></li>
+            <li class="text--md"><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- /Header -->
@@ -72,45 +89,87 @@
       </section>
       <!-- /Awakened Wonders -->
       <!-- Rumble -->
-       <section class="rumble_section section">
+      <section class="rumble_section section">
         <div class="rumble__block container flex-column">
-            <div class="rumble__block--heading flex-column">
-                <h2 class="text--xl">Stay Free With Russell Brand</h2>
-                <a href="#" class="link btn btn--dark">Watch now</a>
-            </div>
-            <div class="rumble__block--dates flex-column">
-                <span class="text--md">LIVE Weekdays on Rumble</span>
-                <span class="text--md">12:00pm EST / 11:00am CST / 5:00pm GMT</span>
-            </div>
+          <div class="rumble__block--heading flex-column">
+            <h2 class="text--xl">Stay Free With Russell Brand</h2>
+            <a href="#" class="link btn btn--dark">Watch now</a>
+          </div>
+          <div class="rumble__block--dates flex-column">
+            <span class="text--md">LIVE Weekdays on Rumble</span>
+            <span class="text--md">12:00pm EST / 11:00am CST / 5:00pm GMT</span>
+          </div>
         </div>
       </section>
       <!-- /Rumble -->
       <!-- Contact-->
-       <section class="contact__section section">
-            <div class="contact__block container flex-column">
-                <div class="contact__form flex-column">
-                    <h2 class="text--xl">Join the Mailing List</h2>
-                    <p>Sign up here to receive vital weekly messages directly from me and to get your place on the ark if we can't sort this sh*t out.</p>
-                    <form class="flex-column" action="#" method="get">
-                        <label class="body" for="name">First name</label>
-                        <input type="text" id="name" name="name" required>
-                        <label class="body" for="country">Country</label>
-                        <input type="text" id="country" name="country" required>
-                        <label class="body" for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <input class="link btn btn--dark" type="submit" value="Sign up to my mailing list">
-                    </form>
-                    <img src="media/animated_crow.webp" alt="animated-crow">
-                </div>
-            </div>
-       </section>
+      <section class="contact__section section">
+        <div class="contact__block container flex-column">
+          <div class="contact__form flex-column">
+            <h2 class="text--xl">Join the Mailing List</h2>
+            <p>
+              Sign up here to receive vital weekly messages directly from me and
+              to get your place on the ark if we can't sort this sh*t out.
+            </p>
+            <form class="flex-column" action="#" method="get">
+              <label class="body" for="name">First name</label>
+              <input type="text" id="name" name="name" required />
+              <label class="body" for="country">Country</label>
+              <input type="text" id="country" name="country" required />
+              <label class="body" for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <input
+                class="link btn btn--dark"
+                type="submit"
+                value="Sign up to my mailing list"
+              />
+            </form>
+            <img src="media/animated_crow.gif" alt="animated-crow"/>
+          </div>
+        </div>
+      </section>
       <!-- /Contact-->
+      <!-- Carroussel -->
+      <section class="carroussel__section section">
+        <div class="carroussel__block container">
+          <h2 class="text--xl">My most visited services</h2>
+          <div id="carroussel__card" class="carroussel__card flex-column">
+            <h2 id="carroussel__heading" class="text--md">Awakened Wonders</h2>
+            <img id="carroussel__image" src="media/awk_wonders.webp" alt="awk_wonders">
+            <span id="carroussel__description" class="body">Watch my exclusive LIVE weekly special, “Break Bread”</span>
+          </div>
+        </div>
+      </section>
+      <!-- /Carroussel -->
     </main>
     <!-- /Main -->
 
     <!-- Footer -->
     <footer>
-
+      <div class="footer__block container flex-column">
+        <ul class="footer__list">
+            <li class="text--md"><a href="#">Home</a></li>
+            <li class="text--md"><a href="#">Rumble Live Show</a></li>
+            <li class="text--md"><a href="#">Awakened Wonders</a></li>
+            <li class="text--md"><a href="#">Podcasts</a></li>
+            <li class="text--md"><a href="#">Blog</a></li>
+            <li class="text--md"><a href="#">Live Dates</a></li>
+            <li class="text--md"><a href="#">Mailing Lists</a></li>
+            <li class="text--md"><a href="#">Contact</a></li>
+        </ul>
+        <div class="footer__icons flex-row">
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </div>
+        <div class="footer__links flex-row">
+          <li><a class="link" href="#">&copy; 2025 Russell Brand</a></li>
+          <li><a class="link" href="#">Terms</a></li>
+          <li><a class="link" href="#">Privacy</a></li>
+          <li><a class="link" href="#">Cookies</a></li>
+        </div>
+      </div>
     </footer>
     <!-- /Footer -->
   </body>
